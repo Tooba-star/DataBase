@@ -1,36 +1,54 @@
-  
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signin</title>
-    <!-- <link rel="stylesheet" href='style/signinStyle.css'/> -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signin</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
   <div class="container">
-    <form method="post">
-      <div class="imgcontainer">
-        <img src="https://www.w3schools.com/howto/img_avatar2.png" style="width:15%" alt="Avatar" class="avatar">
-      </div>
-    
-      <div class="container">
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required>
-    
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-    
-        <button type="submit">Login</button>
-        <label>
-          <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
-      </div>
-    
-      <div class="container" style="background-color:#f1f1f1">
-        <span class="psw">Forgot <a href="#">password?</a></span>
-      </div>
-    </form>
+    <div class="section-home card">
+      <form method="post form">
+        <div class="imgcontainer">
+          <img src="https://www.w3schools.com/howto/img_avatar2.png" style="width:15%" alt="Avatar" class="avatar">
+        </div>
+        <div class="form">
+          <div class="row">
+            <div class="col-md-6 mt-5 mb-3">
+              <div class="input-group">
+                <label class="input-group-text " for="email">Email</label>
+                <input class="input form-control" type="text" placeholder="Enter Email" name="email" required>
+              </div>
+            </div>
+            <div class="col-md-6 mt-5 mb-3">
+              <div class="input-group">
+                <label class="input-group-text" for="psw">Password</label>
+                <input class="input form-control" type="password" placeholder="Enter Password" name="psw" required>
+              </div>
+            </div>
+          </div>
+          <div class="my-4">
+            <button class="btn btn-primary" type="submit">Login</button>
+          </div>
+          <div class="form-check my-4">
+            <input class="form-check-input" type="checkbox" id="checkbox" name="remember">
+            <label class="form-check-label" for="checkbox">Remember me</label>
+          </div>
+
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
   </div>
 </body>
+
 </html>
